@@ -1,3 +1,4 @@
+#this code is for coursera python for everybody assignment 3_3
 score = input("Enter Score: ")
 score1 = float(score)
 if score1 < 0.6:
