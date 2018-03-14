@@ -1,3 +1,4 @@
+#this code is for coursera python for everybody assignment 3.1
 hrs = input ("Enter hours: ")
 hour = float(hrs)
 rate = input ("rate per hour: ")
