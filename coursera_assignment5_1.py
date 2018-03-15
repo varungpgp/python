@@ -13,3 +13,4 @@ while 1:
       count = count + 1
 print("Total sum:",va)
 print("count:",count)
+print(va,count,va/count)
