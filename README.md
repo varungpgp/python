@@ -1,3 +1,4 @@
 # python
 
-just testing github coming soon
+This contains assignment solution for python for everybody (coursera)
+###########################################################################
