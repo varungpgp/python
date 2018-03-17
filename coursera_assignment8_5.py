@@ -9,14 +9,17 @@
 
 #You can download the sample data at http://www.py4e.com/code3/mbox-short.txt
 
-fname = input("Enter a file name: ")
-data = [line.strip("\n")
-         for line in open(fname, 'r')
-             if line.startswith("From") and not line.startswith("From:")]
-
 count = 0
-for line in data:
-    words = line.split()
-    print (words[1])
-    count = count + 1
+fname = input("Enter file name: ")
+fh = open(fname)
+
+for data in fh:
+    if not data.startswith('From:'):
+       continue
+    elif data.startswith('From'):
+        data =  data.rstrip()
+        strin = data.split()
+        new = strin[1]
+        count = count + 1
+        print(new)
 print( "There were %s lines in the file with From as the first word" % count)
