@@ -14,7 +14,7 @@ fname = input("Enter file name: ")
 fh = open(fname)
 
 for data in fh:
-    if not data.startswith('From:'):
+    if data.startswith('From:'):
        continue
     elif data.startswith('From'):
         data =  data.rstrip()
